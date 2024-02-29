@@ -6,7 +6,7 @@
   curl -sfL https://get.k3s.io | sh -
   ```
   This command downloads a script from the official k3s website and runs it, which will install k3s on your Ubuntu system.
-  Check that k3s is running with:
+* Check that k3s is running with:
   ```
   sudo k3s kubectl get node
   ```
@@ -24,6 +24,19 @@
   ```
   sudo k3s kubectl get services
   ```
+## Step 3: Set Up Prometheus and Grafana
+* Install Helm, which is a package manager for Kubernetes that simplifies the installation of applications:
+  ```
+  curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+  ```
+* Add the Prometheus Helm chart repository and install Prometheus:
+  ```
+  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+  helm repo update
+  helm install prometheus prometheus-community/prometheus
+  ```
+* 
+  
 
 
 
