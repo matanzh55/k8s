@@ -147,7 +147,7 @@
 
 * Continue adding panels for different metrics you are interested in monitoring.
 
-  here is an example of Grafana UI:
+* here is an example of Grafana UI:
 
 <img width="604" alt="צילום מסך 2024-02-29 235702" src="https://github.com/matanzh55/k8s/assets/62210664/2f254bc3-9c9b-4086-a820-666f43cf4bd4">
 
